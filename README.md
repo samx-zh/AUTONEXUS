@@ -27,9 +27,9 @@ Node.js / npm - Development tooling and package management
 
 ## Contributors
 
-| Name | Role | Contribution |
-|---|---|---|
+| Name | Role | 
+|---|---|
 | N.Samiksha| JavaScript/UI Developer | 
 | Gayathri Rajeev | UI/CSS Specialist | 
-| Arjun S P | JavaScript Developer | 
+| Arjun S P | Backend Developer | 
 | Sarvesh Susheer | Frontend  Developer |
