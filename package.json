@@ -1,0 +1,16 @@
+{
+  "name": "autonexus",
+  "version": "1.0.0",
+  "description": "Car Suggestions & Analysis Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.22.2"
+  },
+  "author": "AutoNexus Team",
+  "license": "MIT"
+}

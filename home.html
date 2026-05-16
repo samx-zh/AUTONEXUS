@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoNexus — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .home-hero {
+      text-align: center;
+      padding: 3rem 2rem 1.5rem;
+      position: relative;
+    }
+
+    .home-hero h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(1.6rem, 5vw, 3.2rem);
+      font-weight: 900;
+      letter-spacing: 4px;
+      line-height: 1.2;
+      background: linear-gradient(135deg, var(--accent) 0%, #fff 50%, var(--accent2) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 0.8s ease both;
+    }
+
+    .home-hero .subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      animation: fadeInDown 0.8s 0.2s ease both;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .home-layout {
+      display: grid;
+      grid-template-columns: 200px 1fr 200px;
+      gap: 1.5rem;
+      padding: 0 1.5rem 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Sidebar ads */
+    .ad-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: 0.5rem;
+    }
+
+    .ad-banner {
+      animation: slideIn 0.6s ease both;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Center content */
+    .home-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      border-color: var(--accent);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(232,180,0,0.15);
+    }
+
+    .feature-card .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.7) saturate(1.2);
+      transition: all 0.4s;
+    }
+
+    .feature-card:hover .card-img {
+      filter: brightness(0.9) saturate(1.4);
+    }
+
+    .feature-card .card-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.5rem;
+      background: linear-gradient(0deg, rgba(10,14,26,0.95) 0%, transparent 100%);
+    }
+
+    .feature-card .card-label {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 0.4rem;
+    }
+
+    .feature-card .card-title {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.1rem;
+      color: var(--text);
+      letter-spacing: 2px;
+      margin-bottom: 0.4rem;
+    }
+
+    .feature-card .card-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .feature-card .card-arrow {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 36px;
+      height: 36px;
+      background: rgba(232,180,0,0.15);
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: var(--accent);
+      transition: all 0.3s;
+    }
+
+    .feature-card:hover .card-arrow {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      grid-column: 1 / -1;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 1rem;
+      gap: 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0.5rem;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat-item:last-child { border-right: none; }
+
+    .stat-value {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    @media (max-width: 900px) {
+      .home-layout {
+        grid-template-columns: 1fr;
+      }
+      .ad-sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .home-center { grid-template-columns: 1fr; }
+      .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo" title="Back to Login">
+      <span class="icon">🚗</span> AUTONEXUS
+    </a>
+    <ul class="nav-links">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="home-hero">
+      <h1>Car Suggestions &amp; Analysis</h1>
+      <p class="subtitle">Your intelligent vehicle decision platform</p>
+    </div>
+
+    <div class="home-layout">
+      <!-- Left Ads -->
+      <div class="ad-sidebar" id="leftAds"></div>
+
+      <!-- Center -->
+      <div class="home-center">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="stat-value">50+</div>
+            <div class="stat-label">Vehicles Listed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5</div>
+            <div class="stat-label">Categories</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Unbiased</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Free</div>
+            <div class="stat-label">Always</div>
+          </div>
+        </div>
+
+        <a href="findyourcar.html" class="feature-card">
+          <img
+            src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80"
+            alt="Find Your Car"
+            class="card-img"
+          />
+          <div class="card-arrow">→</div>
+          <div class="card-overlay">
+            <span class="card-label">Smart Filter</span>
+            <div class="card-title">Find Your Car</div>
+            <p class="card-desc">Use our intelligent filters to discover your perfect vehicle match.</p>
+          </div>
+        </a>
+
+        <a href="comparison.html" class="feature-card">
+          <img
+            src="https://img.freepik.com/premium-photo/low-angle-view-sleek-cars-parked-city-street-with-focus-red-cars-alloy-wheel-showcasing-urban-life-luxury_436767-2978.jpg"
+            alt="Compare Vehicles"
+            class="card-img"
+          />
+          <div class="card-arrow">→</div>
+          <div class="card-overlay">
+            <span class="card-label">Side by Side</span>
+            <div class="card-title">Compare Vehicles</div>
+            <p class="card-desc">Put any two vehicles head-to-head with detailed spec comparisons.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right Ads -->
+      <div class="ad-sidebar" id="rightAds"></div>
+    </div>
+  </div>
+
+  <script>
+    // Auth guard
+    if (sessionStorage.getItem('autonexus_auth') !== 'true') {
+      window.location.href = 'index.html';
+    }
+
+    const deals = [
+      { title: "FLASH DEAL", deal: "₹50,000 OFF", brand: "Toyota Fortuner", desc: "Limited time offer", color: "#e8b400" },
+      { title: "FINANCE DEAL", deal: "0% EMI", brand: "Hyundai Creta", desc: "12-month scheme", color: "#ff4d00" },
+      { title: "EXCHANGE", deal: "Extra ₹30K", brand: "Maruti Swift", desc: "On old car exchange", color: "#00d68f" },
+      { title: "SERVICE FREE", deal: "3 Years Free", brand: "Kia Carens", desc: "Free AMC included", color: "#e8b400" },
+      { title: "EV OFFER", deal: "₹1.5L OFF", brand: "Tesla Model 3", desc: "Govt. subsidy applied", color: "#ff4d00" },
+      { title: "YEAR-END SALE", deal: "10% OFF", brand: "BMW 3 Series", desc: "Year-end clearance", color: "#00d68f" },
+    ];
+
+    function makeAd(d) {
+      return `<div class="ad-banner">
+        <div class="ad-title" style="color:${d.color}">${d.title}</div>
+        <div class="ad-deal" style="color:${d.color}">${d.deal}</div>
+        <div class="ad-desc">on <strong>${d.brand}</strong><br>${d.desc}</div>
+      </div>`;
+    }
+
+    document.getElementById('leftAds').innerHTML = deals.slice(0, 3).map(makeAd).join('');
+    document.getElementById('rightAds').innerHTML = deals.slice(3).map(makeAd).join('');
+  </script>
+</body>
+</html>
