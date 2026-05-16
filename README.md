@@ -3,7 +3,7 @@ AUTONEXUS is a front-end web application designed for car enthusiasts and buyers
 Whether you're looking for performance specs, feature comparisons, or personalized car suggestions — AutoNexus puts it all in one sleek interface.
 
 ## THEME
-Color Palette: Deep charcoal backgrounds with golden amber (#E8B400) accents, creating a premium, high-contrast feel.
+Color Palette: Deep charcoal backgrounds with golden amber (#E8B400) accents, creating a premium, high-contrast feel.|
 Typography: Orbitron (display/brand) paired with Exo 2 (body) — both designed for a tech-forward, motorsport-inspired look.
 Motion: Animated road lines on the login screen, smooth transitions, and hover micro-interactions throughout.
 UI Language: Card-based layouts, glowing borders, gradient accents, and a bold brand presence — built for an immersive user experience.
