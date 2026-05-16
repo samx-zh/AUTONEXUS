@@ -28,10 +28,19 @@ AUTONEXUS is built entirely using core web technologies without any frameworks o
 ## WEBSITE IMAGES
 <img width="1918" height="858" alt="Screenshot 2026-05-16 202502" src="https://github.com/user-attachments/assets/21daba23-97a2-4f83-8539-fd5a8feba127" />
 <img width="1919" height="837" alt="Screenshot 2026-05-16 205823" src="https://github.com/user-attachments/assets/dceb2482-2df9-493f-a670-435f5bc87666" />
-<img width="1916" height="843" alt="Screenshot 2026-05-16 205936" src="https://github.com/user-attachments/assets/8acaf817-7134-4406-9edc-4c7ca7a5bb8a" />
-<img width="1917" height="853" alt="Screenshot 2026-05-16 205909" src="https://github.com/user-attachments/assets/7e9ef0d3-9c31-40a0-9c56-c685920f401c" />
-<img width="1919" height="842" alt="Screenshot 2026-05-16 205848" src="https://github.com/user-attachments/assets/c7e16afa-4ad9-4371-97d1-7762ace2b960" />
-<img width="1913" height="840" alt="Screenshot 2026-05-16 205958" src="https://github.com/user-attachments/assets/c38cb8bf-bac0-4b19-a87e-70278ae29198" />
+<img width="1919" height="846" alt="Screenshot 2026-05-16 210418" src="https://github.com/user-attachments/assets/9e66cb41-c5b8-4e7c-83d3-402ff976ed46" />
+<img width="1919" height="824" alt="Screenshot 2026-05-16 210437" src="https://github.com/user-attachments/assets/64117104-5893-4f04-b60b-ef19bfa556da" />
+<img width="1919" height="842" alt="Screenshot 2026-05-16 205848" src="https://github.com/user-attachments/assets/c6e5c4f9-3f73-4da7-9b94-138f1ca538c2" />
+<img width="1917" height="853" alt="Screenshot 2026-05-16 205909" src="https://github.com/user-attachments/assets/0aebf4be-d5a2-42d1-80fd-2dc71373f57b" />
+<img width="1916" height="843" alt="Screenshot 2026-05-16 205936" src="https://github.com/user-attachments/assets/0eeed81c-1f68-4e14-8d2e-212dfb8ea631" />
+<img width="1913" height="840" alt="Screenshot 2026-05-16 205958" src="https://github.com/user-attachments/assets/15f2a5ee-524f-4e95-a976-6e4857f610b7" />
+
+
+
+
+
+
+
 
 
 
