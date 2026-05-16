@@ -24,3 +24,15 @@ AUTONEXUS is built entirely using core web technologies without any frameworks o
 | Gayathri Rajeev | UI/CSS Specialist | 
 | Arjun S P | Backend Developer | 
 | Sarvesh Susheer | Frontend  Developer |
+
+## WEBSITE IMAGES
+<img width="1918" height="858" alt="Screenshot 2026-05-16 202502" src="https://github.com/user-attachments/assets/21daba23-97a2-4f83-8539-fd5a8feba127" />
+<img width="1919" height="837" alt="Screenshot 2026-05-16 205823" src="https://github.com/user-attachments/assets/dceb2482-2df9-493f-a670-435f5bc87666" />
+<img width="1916" height="843" alt="Screenshot 2026-05-16 205936" src="https://github.com/user-attachments/assets/8acaf817-7134-4406-9edc-4c7ca7a5bb8a" />
+<img width="1917" height="853" alt="Screenshot 2026-05-16 205909" src="https://github.com/user-attachments/assets/7e9ef0d3-9c31-40a0-9c56-c685920f401c" />
+<img width="1919" height="842" alt="Screenshot 2026-05-16 205848" src="https://github.com/user-attachments/assets/c7e16afa-4ad9-4371-97d1-7762ace2b960" />
+<img width="1913" height="840" alt="Screenshot 2026-05-16 205958" src="https://github.com/user-attachments/assets/c38cb8bf-bac0-4b19-a87e-70278ae29198" />
+
+
+
+
